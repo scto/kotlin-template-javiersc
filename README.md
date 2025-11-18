@@ -1,4 +1,4 @@
-# JavierSC Kotlin template
+# scto Kotlin template
 
 Create libraries for all types of Kotlin projects: android, JVM, Multiplatform, Gradle plugins, and
 so on.
