@@ -5,7 +5,7 @@ on:
     inputs:
       root_project_name:
         description: 'Root project name used by Gradle'
-        default: 'javiersc-kotlin-template'
+        default: 'scto-kotlin-template'
         required: true
       main_project_name:
         description: 'Main project name'
@@ -13,12 +13,12 @@ on:
         required: true
       project_group:
         description: 'Project group used by Gradle'
-        default: 'com.javiersc.kotlin'
+        default: 'com.scto.kotlin'
         required: true
       sonar_organization:
         description: 'Sonar organization name'
-        default: 'javiersc'
-        required: true
+        default: 'scto'
+        required: false
       name:
         description: 'Project name used for docs or POM data'
         default: 'Kotlin Template'
@@ -29,15 +29,15 @@ on:
         required: true
       github_username:
         description: 'Project repo used for docs or POM data (`https://github.com/[this]/repo`)'
-        default: 'JavierSegoviaCordoba'
+        default: 'scto'
         required: true
       username:
         description: 'User name'
-        default: 'Javier Segovia Cordoba'
+        default: 'Thomas Schmid'
         required: true
       email:
         description: 'User email'
-        default: 'javier@segoviacordoba.com'
+        default: 'tschmid35@gmail.com'
         required: true
       repo:
         description: 'Project repo used for docs or POM data (`https://github.com/JavierSegoviaCordoba/[this]`)'
@@ -51,7 +51,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: JavierSegoviaCordoba/actions/git/checkout@main
+        uses: scto/actions/git/checkout@main
         with:
           token: '${{ secrets.TOKEN_GITHUB_ACTION }}'
 
